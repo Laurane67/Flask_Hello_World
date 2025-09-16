@@ -24,4 +24,4 @@ RUN wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz &&
 EXPOSE 5000
 
 # Commande de démarrage
-CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD ["sh", "-c", "python -m flask run --host=0.0.0.0 --port=5000"]
